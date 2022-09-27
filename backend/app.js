@@ -16,8 +16,6 @@ app.use(express.urlencoded({ extended: false }))
 const router = require("./routes/Router.js")
 
 // solve CORS
-// soluciona o problema de várias reqs no mesmo domínio
-// origin se refere ao endereço do projeto front-end
 app.use(cors({ credentials: true, origin: "http://localhost:3000" }))
 
 // upload directory
