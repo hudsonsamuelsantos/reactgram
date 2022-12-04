@@ -8,6 +8,8 @@ const profile = async (data, token) => {
         const res = await fetch(api + "/users/profile", config)
             .then(res => res.json())
             .catch(err => err)
+
+        return res
     } catch (error) {
         console.log(error)
     }
